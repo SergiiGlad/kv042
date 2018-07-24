@@ -1,1 +1,0 @@
-Sorry, file already exists.Sorry, only JPG, JPEG, PNG & GIF files are allowed.Sorry, your file was not uploaded.

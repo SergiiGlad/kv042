@@ -1,10 +1,11 @@
 # Project Practice #1 Bash script
 
-Script should send file by useing curl
+Script should send file by useing curl and should be deployed as service in systemd.
 
 ## Getting Started
 
-script_send.sh as service should send file 
+script_send.sh is script for sending file
+service.txt is description service
 
 ### Prerequisites
 

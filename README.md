@@ -10,7 +10,11 @@ service.txt is description service
 You can run the script with the following commands:
 
 	$ ./script.sh            # create file for sending
-	
+	$ curl -F fileToUpload=@ps.tar.gz https://Cloud9Server:8080/upload.php
+
+
+
+
 
 ### Prerequisites
 

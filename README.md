@@ -7,6 +7,11 @@ Script should send file by useing curl and should be deployed as service in syst
 script_send.sh is script for sending file
 service.txt is description service
 
+You can run the script with the following commands:
+
+	$ ./script.sh            # create file for sending
+	
+
 ### Prerequisites
 
 What things you need to install the software and how to install them

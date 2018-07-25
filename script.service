@@ -1,0 +1,12 @@
+[Unit]
+Description=script_send
+
+[Service]
+Type=forking
+
+EnviromentFile=~/conf.txt
+
+ExecStart=/home/boo/script_send.sh
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]

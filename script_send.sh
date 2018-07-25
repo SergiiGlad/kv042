@@ -2,19 +2,16 @@
 
 while true; do
 
-ls $filename
+sleep $superperiod
 
-if [ $? != 0 ]; then 
-echo "file $filename not found"
+ls $superfile
+if [ "$?" -ne 0 ]; then 
 continue
 else
-ping -c1 $superip 2>/dev/null
 
-	if [ $? != 0 ]; then 
-		echo "Host $IP not found"
-		continue
-	else
-		echo "Host $IP found"
+ping -c1 -W100 $superip 
+
+	if [ "$?" -eq 0 ]; then 
 		echo "Sending file...."
 		rm $filename
 	fi

@@ -13,7 +13,8 @@ else
 
 	if [ "$?" -eq 0 ]; then 
 		echo "Sending file...."
-		rm $filename
+		nc $superip $superport < $superfile
+		rm $superfile
 	fi
 fi
 done;

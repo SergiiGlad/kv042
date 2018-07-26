@@ -4,9 +4,9 @@ Description=script_send
 [Service]
 Type=forking
 
-EnviromentFile=~/conf.txt
+EnvironmentFile=/home/osboxes/kv042/conf.txt
 
-ExecStart=/home/boo/script_send.sh
+ExecStart=/home/osboxes/kv042/filesend.sh
 ExecStop=/bin/kill -15 $MAINPID
 
 [Install]

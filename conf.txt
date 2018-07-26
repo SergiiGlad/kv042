@@ -1,5 +1,0 @@
-# Environment variables for service script
-export superport="80"
-export superip="192.168.96.245"
-export superperiod=2
-export superfile="ps.txt"

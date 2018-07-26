@@ -4,16 +4,30 @@ Script should send file by useing curl and should be deployed as service in syst
 
 ## Getting Started
 
-script_send.sh is script for sending file
-service.txt is description service
+git clone https://github.com/SergiiGlad/kv04
 
-You can run the script with the following commands:
+In case of Systemd we should add a script.service file in /etc/systemd/system
 
-	$ ./script.sh            # create file for sending
-	$ curl -F fileToUpload=@ps.tar.gz https://Cloud9Server:8080/upload.php
+cp script.service /etc/systemd/system
 
+Enter these command to enable and run:
 
+systemctl enable script
+systemctl start script
 
+If you want to look status
+
+systemctl status script
+
+filesend.sh will check $SUPERFILE and will send to reciever
+
+On host reciever:
+
+nc -lp 5000 > my.jpg
+
+Environment variables as host port file you can see
+
+cat conf.sh
 
 
 ### Prerequisites

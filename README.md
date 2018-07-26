@@ -4,7 +4,7 @@ Script should send file by useing curl and should be deployed as service in syst
 
 ## Getting Started
 
-git clone https://github.com/SergiiGlad/kv04
+git clone https://github.com/SergiiGlad/kv042
 
 In case of Systemd we should add a script.service file in /etc/systemd/system
 
@@ -57,6 +57,9 @@ until finished
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
+
+$ ./script.sh            # create file for sending
+$ curl -F fileToUpload=@ps.tar.gz https://Cloud9Server:8080/upload.php
 
 Explain how to run the automated tests for this system
 

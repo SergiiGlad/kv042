@@ -23,8 +23,8 @@ Requires:	postgresql postgresql-server postgresql-libs postgresql-contrib postgr
 
 %post
 postgresql-setup initdb
-systemctl enable postgresql.service
-systemctl start postgresql.service
+systemctl enable postgresql.service httpd.service
+systemctl start postgresql.service httpd.service
 
 
 

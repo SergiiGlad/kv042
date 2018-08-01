@@ -8,5 +8,4 @@ z=ps.tar.gz
 tar -czvf $z $f
 
 echo "tar created"
-
 ls $z
